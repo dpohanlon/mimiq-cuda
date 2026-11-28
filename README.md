@@ -80,6 +80,12 @@ The normal and zero-inflated variants are
 `mi_normal_{cpu,gpu}` and `mi_negative_binomial_zi_{cpu,gpu}`. Compatibility
 aliases ending in `_hist` and `_hist_gpu` are also exported.
 
+## Performance
+
+On one million cells, MIMIQ with normal marginals ran about twice as fast on the GPU as on 12 CPU cores.
+
+![MIMIQ normal wall time versus gene count on CPU and GPU](assets/runtime_by_genes_1m_cells_normal.png)
+
 ## Test
 
 ```bash
